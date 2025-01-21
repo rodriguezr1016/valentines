@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const hoverSound = document.getElementById('hoverSound');
     const hoverSound2 = document.getElementById('hoverSound2');
     const yesSound2 = document.getElementById('yesSound2');
+    const yesSound3 = document.getElementById('yesSound3');
 
     console.log(noButton); // Should log the button if it exists
     noButton.addEventListener('mouseover', function (){
@@ -42,6 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
  const yesFunction = function(){
     const yesSound = document.getElementById('yesSound');
+    const yesSound3 = document.getElementById('yesSound3');
     const noButton = document.querySelector('.buttonNo');
     const yesButton = document.querySelector('.buttonYes');
     const firstElement = document.querySelector('.first')
@@ -56,4 +58,5 @@ document.addEventListener('DOMContentLoaded', () => {
    yes2Element.style.display='block'
    yesSound.currentTime = 0;
     yesSound.play()
+    yesSound3.play()
 }
