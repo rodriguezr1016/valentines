@@ -52,6 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const noButton = document.querySelector('.buttonNo');
     const yesButton = document.querySelector('.buttonYes');
     const firstElement = document.querySelector('.first')
+    const images = document.querySelector('img');
     const text = document.querySelector('p')
     const yes2Element = document.querySelector('.yes2')
    const h1 = document.querySelector('h1')
@@ -59,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
    noButton.style.display='none'
    yesButton.style.display='none'
    text.style.display="flex"
-   firstElement.style.display='none'
+   images.style.display='none'
    yes2Element.style.display='block'
    yesSound.currentTime = 0;
     yesSound.play()
