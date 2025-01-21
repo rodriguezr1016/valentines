@@ -5,13 +5,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const noElement = document.querySelector('.no')
     const yes1Element = document.querySelector('.yes1')
     const hoverSound = document.getElementById('hoverSound');
+    const hoverSound2 = document.getElementById('hoverSound2');
     const yesSound2 = document.getElementById('yesSound2');
 
     console.log(noButton); // Should log the button if it exists
     noButton.addEventListener('mouseover', function (){
         firstElement.style.display='none';
         noElement.style.display = 'block';
-        noButton.innerHTML='Yes'
+        noButton.innerHTML='Yes';
+        hoverSound2.currentTime = 0;
+        hoverSound2.play();
         hoverSound.currentTime = 0;
         hoverSound.play()
     });
