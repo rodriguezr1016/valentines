@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const yesButton = document.querySelector('.buttonYes');
     const firstElement = document.querySelector('.first')
     const noElement = document.querySelector('.no')
+    const excuseElement = document.querySelector('.excuse')
     const yes1Element = document.querySelector('.yes1')
     const hoverSound = document.getElementById('hoverSound');
     const hoverSound2 = document.getElementById('hoverSound2');
@@ -13,6 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
     noButton.addEventListener('mouseover', function (){
         firstElement.style.display='none';
         noElement.style.display = 'block';
+        excuseElement.style.display = 'block';
+        excuseElement.style.width = '25%';
+        noElement.style.width = '25%';
         noButton.innerHTML='Yes';
         hoverSound2.currentTime = 0;
         hoverSound2.play();
@@ -21,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     noButton.addEventListener('mouseout', () => {
         noElement.style.display = 'none';
+        excuseElement.style.display = 'none';
         firstElement.style.display='block';
         noButton.innerHTML='No'
 
