@@ -49,6 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
  const yesFunction = function(){
     const yesSound = document.getElementById('yesSound');
     const yesSound3 = document.getElementById('yesSound3');
+    const yesSound4 = document.getElementById('yesSound4');
     const noButton = document.querySelector('.buttonNo');
     const yesButton = document.querySelector('.buttonYes');
     const firstElement = document.querySelector('.first')
@@ -65,4 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
    yesSound.currentTime = 0;
     yesSound.play()
     yesSound3.play()
+    yesSound4.currentTime = 9
+    yesSound4.play()
+
 }
